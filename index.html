@@ -4,8 +4,13 @@
 	<h1>KayTheSloth's First Website</h1>
         <p> <b> Hello and welcome to my awesome website!👋</b>
 	<p><img src="https://i.ytimg.com/an/XeZlVNgLwZTLB5jzS-TMAw/featured_channel.jpg?v=5f72397d" alt="wavehello"</p>
-
-
+	<p>click the arrow to scroll down</p>
+	$(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
         <p> Below is a small description of me</p>  
         <p style="font-family:Arial">I like to play video games, read, sleep, and make content.</p>
         <p style="font-family:Arial">I like sloths a lot and stream on twitch and have a YouTube where i post content</p>
@@ -33,44 +38,3 @@
           <p>Basketball. Basketball is a fun and entertainming sport, and even thought i don't play it that oftnen, I still think it's a good sport and I woujld like to learn it more and become better at it.</p>
           <p>Soccer. I played Soccer when i was around 3 and 4, and I love it. It was super fun playing with my friends on the small field and getting to get some chips after practices and games.</p>
 		<p><b>Contact Me @ kaydenradice@gmail.com or kayradice on Instagram.</b></p>
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<script>
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scroll-top').fadeIn();
-        } else {
-            $('.scroll-top').fadeOut();
-        }
-    });
-
-    $('.scroll-top').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 100);
-        return false;
-    });
-
-});
-</script>
-
-        
-         </div>
-         <!--/.nav-collapse -->
-      </div>
-      <!--/.container-fluid -->
-   </nav>
-   <!-- Main component for a primary marketing message or call to action -->
-   <div class="jumbotron">
-      <h1>Scroll Down</h1>
-      
-</div>
-<!-- /container -->
-
-<button class="btn btn-primary scroll-top" data-scroll="up" type="button">
-<i class="fa fa-chevron-up"></i>
-</button>
-
-</html.
